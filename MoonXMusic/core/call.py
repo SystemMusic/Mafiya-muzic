@@ -3,14 +3,14 @@ import os
 from datetime import datetime, timedelta
 from typing import Union
 
-from ntgcalls import TelegramServerError
 from pyrogram import Client
 from pyrogram.types import InlineKeyboardMarkup
-
-from pytgcalls import PyTgCalls, exceptions, types
-from pytgcalls.pytgcalls_session import PyTgCallsSession
-from pytgcalls.types.stream import StreamAudioEnded
-
+from pytgcalls import PyTgCalls, StreamType
+from pytgcalls.exceptions import (
+    AlreadyJoinedError,
+    NoActiveGroupCall,
+    TelegramServerError,
+)
 import config
 from MoonXMusic import LOGGER, YouTube, app
 from MoonXMusic.misc import db
