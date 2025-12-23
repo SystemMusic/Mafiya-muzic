@@ -7,8 +7,8 @@ from ntgcalls import TelegramServerError
 from pyrogram import Client
 from pyrogram.types import InlineKeyboardMarkup
 
-from pytgcalls.exceptions import AlreadyJoinedError, NoActiveGroupCall
-from pytgcalls.types import AudioQuality, MediaStream, Update, VideoQuality
+from pytgcalls import PyTgCalls, exceptions, types
+from pytgcalls.pytgcalls_session import PyTgCallsSession
 from pytgcalls.types.stream import StreamAudioEnded
 
 import config
